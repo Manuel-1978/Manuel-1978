@@ -1,0 +1,121 @@
+.App {
+  text-align: center;  
+}
+.body{
+  height: 1fr;
+}
+/* Navegador*/
+.Navbar{
+  background: linear-gradient(to right, rgba(218,72,14,1) 0%, rgba(255,255,255,1) 100%);
+  height: 15em;
+  display: flex;   
+  color: white;
+  justify-content:space-between;
+}
+.Navbar img{
+  height:18em ;
+  padding-inline-start: 10px;
+  align-items:flex-start;
+  padding: 20px;
+}
+.linkCustomer{
+  font-size: x-large; 
+  text-align:justify ;   
+  display: flex;   
+  align-items:flex-start ;
+  gap: 40px; 
+}
+a {
+text-decoration: none;
+padding-right: 30px;
+}
+
+/*Pie de Pagina*/
+.Footer{
+  background:linear-gradient(to left, rgb(218,72,14,1) 50%, rgba(255,255,255,1) 100%);; 
+  display: flex;   
+  color: white;
+  justify-content: flex-end;
+  width: 100%;
+  height: 15em;
+}
+.Footer img{
+  width: 50%;
+  height: 15em;
+  align-items:center;
+  justify-content: center; 
+} 
+/*Pagina principal*/
+.principalPage {
+  background-color: rgb(48, 35, 29);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;  
+  color: white;
+  height: 10px;
+}
+/*Pagina login*/
+.userLogin{
+  background-color: rgb(48, 35, 29);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;  
+  color: white;
+  height: 10px;
+}
+/* Formulario de nuevo usuario*/
+.form{
+
+  background-color: rgb(48, 35, 29);
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;   
+  color: white; 
+  padding-top: 10vh;
+}
+.form input{
+  font-size: x-large;
+  width: 110vh;
+  height: 8vh;   
+  margin-bottom: 5px;
+  background-color:azure ;
+  align-content: 10px;
+}
+ #btn-newuser{
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+/*Acceso de usuario*/
+.userLogin{ 
+  font-size: xx-large;
+  left: 50%;
+  top: 30%;  
+  border: 3px solid rgb(3, 2, 24);
+  padding: 40px;
+  background-color: rgb(48, 35, 29);
+}
+.userLogin2 input{
+  font-size: xx-large;
+}
+.userLogin2{
+  text-align: center;
+  font-size: xx-large;
+  border: 3px solid rgb(3, 2, 24);
+  padding: 100px;
+  background-color: azure;
+  color:rgb(3, 2, 24)  ;
+  border-radius: 8px;
+}
+.btn-access{
+  background-color: rgb(236, 123, 16);
+  font-size: x-large;
+  border: 2px solid black;
+  color: whitesmoke;
+  border-radius: 8px;
+}
