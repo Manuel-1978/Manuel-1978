@@ -1,0 +1,39 @@
+{
+  "newusers": [
+    {
+      "id": 1,
+      "name": "Jose",
+      "lastName": "Ramirez",
+      "identity": "74831878f",
+      "empresa": "codespace",
+      "email": "jramirez@gmail.com",
+      "username": "jramirez",
+      "password": "123456",
+      "phoneNumber": "987654321",
+      "isadmin": false
+    },
+    {
+      "id": 2,
+      "name": "Pepa",
+      "lastName": "Ramirez",
+      "identity": "83731878d",
+      "empresa": "codespace",
+      "email": "Pramirez@gmail.com",
+      "username": "pramirez",
+      "password": "654321",
+      "phoneNumber": "987654322",
+      "isadmin": true
+    },
+    {
+      "name": "Manuel",
+      "lastName": "Rico",
+      "identity": "74831887f",
+      "company": "micasa",
+      "email": "manuelricorios@gmail.com",
+      "username": "Manuel",
+      "password": "123456",
+      "phoneNumber": "627891008",
+      "id": 3
+    }
+  ]
+}

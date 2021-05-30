@@ -1,5 +1,6 @@
 import{useState} from "react";
 import {URL_USERS} from "../setting"
+//import {useHistory} from 'react-router-dom';
 
 export default function NewUsertForm() {
 
@@ -24,9 +25,11 @@ export default function NewUsertForm() {
         
     };
  
-  
+
+    //const history=useHistory(); 
+
    function submit(e) {
-     
+       
     e.preventDefault();  
   
       //setUsers(currentUsers => [...currentUsers,newUsers]);
@@ -46,14 +49,19 @@ export default function NewUsertForm() {
     const options = {
       method:'POST',
       // headers -> tipo de informacion JSON
+      headers:{"Content-Type": "application/json"},
       // body -> json stringify
+      body:JSON.stringify(newUser)
     };
 
     fetch(URL_USERS, options)
     .then(res=>res.json())
     .then(res=>{
       if (res.success){
-        alert('Su cuenta ha sido creada.')
+
+        alert('Su cuenta ha sido creada.');
+       // history.push('/Users');
+       
       }
     })
    }
@@ -67,7 +75,7 @@ export default function NewUsertForm() {
         <input id="username"    value={users.username}    onChange={handleInput} className="formInput" type="text"     placeholder="Introduce su Username"/>
         <input id="password"    value={users.password}    onChange={handleInput} className="formInput" type="password" placeholder="Introduce el password"/>
         <input id="identity"    value={users.identity}    onChange={handleInput} className="formInput" type="text"     placeholder="Introduce DNI-NIF-CIF"/>
-        <input id="btn-newuser" className="formInput" type="submit"  value="Registrar"/>
+        <button id="btn-newuser" className="formButton" type="submit"  value="Registrar">REGISTRARSE</button>
         </form>
     )
   }

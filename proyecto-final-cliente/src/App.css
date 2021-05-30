@@ -79,15 +79,18 @@ padding-right: 30px;
   padding-top: 10vh;
 }
 .form input{
-  font-size: x-large;
-  width: 110vh;
-  height: 8vh;   
+  font-size: 20px;
+  width: 90vh;
+  height: 30px;   
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 5px;
   background-color:azure ;
   align-content: 10px;
 }
- #btn-newuser{
-  margin-top: 10px;
+.button {
+  padding: 200px 300px;
+  font-size: 20px;
   border-radius: 10px;
 
 }

@@ -3,6 +3,7 @@ import {useState} from 'react';
 import {URL_USERS} from '../setting';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
+import {useHistory} from 'react-router-dom';
 
 const cookies= new Cookies();
 
@@ -15,7 +16,7 @@ export default function Userlogin() {
        
         }
 
-       
+        const history=useHistory();
 
       const iniciarSesion= async()=>{
            await axios.get(URL_USERS,{ params:{username:users.username,password:users.password}})
@@ -33,7 +34,9 @@ export default function Userlogin() {
                   cookies.set('username',respuesta.username,{path:"/"});
                   cookies.set('phoNumber',respuesta.phoNumber,{path:"/"});
                   alert(`Bienvenido ${respuesta.name} ${respuesta.lastName}`);
-                  window.location.href="../User_Page";
+                  //window.location.href="../User_Page";
+                  
+                 history.push('/User_Page');
                   }else{
                       alert('El usuario o la contraseña no son correctos.');
                   }
@@ -43,7 +46,7 @@ export default function Userlogin() {
          })
         };
 
-      //ComponentDidMount () {if(cookies.get('username')){window.location.href="../User_Page"}};
+ 
         
     return (
         <div>
